@@ -17,32 +17,32 @@ export const links = [
   {
     name: "Home",
     hash: "#home",
-    icon: React.createElement(AiFillHome)
+    icon: React.createElement(AiFillHome, {size: 22})
   },
   {
     name: "About",
     hash: "#about",
-    icon: React.createElement(BsFillInfoSquareFill)
+    icon: React.createElement(BsFillInfoSquareFill, {size: 22})
   },
   {
     name: "Projects",
     hash: "#projects",
-    icon: React.createElement(FaFolderOpen)
+    icon: React.createElement(FaFolderOpen, {size: 22})
   },
   {
     name: "Skills",
     hash: "#skills",
-    icon: React.createElement(FaPencilRuler)
+    icon: React.createElement(FaPencilRuler, {size: 22})
   },
   {
     name: "Education",
     hash: "#education",
-    icon: React.createElement(BsFillBriefcaseFill)
+    icon: React.createElement(BsFillBriefcaseFill, {size: 22})
   },
   {
     name: "Contact",
     hash: "#contact",
-    icon: React.createElement(FaEnvelope)
+    icon: React.createElement(FaEnvelope, {size: 22})
   },
 ] as const;
 
