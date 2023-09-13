@@ -7,10 +7,12 @@ import clsx from "clsx";
 import { links } from "@/lib/data";
 import { useMediaQuery } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import { twMerge } from "tailwind-merge";
 
 const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const isMobile = useMediaQuery("(max-width: 640px)");
+  const isMobileLg = useMediaQuery("(min-width: 502px) and (max-width: 639px)");
 
   return (
     <header className="relative z-[999]">
@@ -19,15 +21,15 @@ const Header = () => {
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0,    x: "-50%", opacity: 1 }}
       />
-      <nav className="flex fixed bottom-[1.5rem] left-1/2 -translate-x-1/2 h-12 w-3/4 py-2 sm:top-[1.7rem] sm:w-auto sm:py-0">
-        <ul className="flex flex-wrap items-center justify-center text-[0.9rem] font-medium text-gray-500 w-full gap-y-2 gap-x-5 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      <nav className={twMerge("flex fixed bottom-6 left-1/2 -translate-x-1/2 h-12 w-3/4 py-2 sm:top-[1.7rem] sm:w-auto sm:py-0", isMobileLg && "bottom-4")}>
+        <ul className={twMerge("flex flex-wrap items-center justify-center text-[0.9rem] font-medium text-gray-500 w-full gap-y-2 gap-x-5 sm:w-[initial] sm:flex-nowrap sm:gap-5", isMobileLg && "justify-between")}>
           {links.map(link => (
             <motion.li className="flex relative items-center justify-center h-3/4"
               key={link.hash} 
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}>
 
-              <Link className={clsx("flex items-center justify-between w-full px-3 py-3 transition hover:text-gray-950 sm:justify-center dark:text-gray-500 dark:hover:text-gray-300", {"text-gray-950 dark:text-gray-200": activeSection === link.name})}
+              <Link className={twMerge("flex items-center justify-between w-full px-3 py-3 transition hover:text-gray-950 sm:justify-center dark:text-gray-500 dark:hover:text-gray-300", activeSection === link.name && "text-gray-950 dark:text-gray-200")}
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name)
