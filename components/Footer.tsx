@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-      <footer className="text-center text-gray-500 px-4 mb-10">
+      <footer className="text-center text-gray-500 px-4 mb-24 sm:mb-10">
           <small className="text-xs block mb-2">
               &copy; 2023 Bruno Rafael Wünsch. All rights reserved.
           </small>
