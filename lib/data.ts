@@ -35,8 +35,8 @@ export const links = [
     icon: React.createElement(FaPencilRuler, {size: 22})
   },
   {
-    name: "Education",
-    hash: "#education",
+    name: "Experience",
+    hash: "#experience",
     icon: React.createElement(BsFillBriefcaseFill, {size: 22})
   },
   {
