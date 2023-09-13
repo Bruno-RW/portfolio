@@ -49,6 +49,7 @@ const Contact = () => {
                 <input className="borderBlack h-14 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                   type="email"
                   name="email"
+                  autoComplete="email"
                   placeholder="Your email"
                   maxLength={100}
                   required
