@@ -69,18 +69,21 @@ export const projectsData = [
     description: "Project for my IT Associate Final Paper, where I created the front and backend for product catalog and information managment website.",
     tags: ["PHP", "JavaScript", "MySQL", "HTML", "CSS", "Bootstrap"],
     imageUrl: cantinhomodaImg,
+    url: "https://github.com/Bruno-RW/cantinho_moda",
   },
   {
     title: "Spotify Clone",
     description: 'Spotify clone project following the instructions of "Code With Antonio" on Youtube.',
     tags: ["React", "Next.js", "TypeScript", "Supabase", "Stripe", "Zustand", "PostgreSQL", "Tailwind", "Radix"],
     imageUrl: rmtdevImg,
+    url: "https://github.com/Bruno-RW/spotify-clone",
   },
   {
     title: "TypeScript Video Game",
     description: "A RPG clicker game made in cooperation with my college colleague, Pedro Henrique Kalschne.",
     tags: ["TypeScript", "Python", "HTML", "CSS", "MySQL", "Tailwind"],
     imageUrl: wordanalyticsImg,
+    url: "https://github.com/Bruno-RW/jogo-ts",
   },
 ] as const;
 
