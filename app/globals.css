@@ -6,28 +6,28 @@ html {
   --line-color: #e5e7eb;
 
   &::-webkit-scrollbar-track {
-    background: rgba(220, 220, 220, 0.75);
+    background: rgba(220, 220, 220, .75);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgb(17, 154, 180);
-    border: 2px solid rgba(220, 220, 220, 0.2);
+    background: rgba(17, 154, 180, .85);
+    border: 2px solid rgba(220, 220, 220, .2);
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: rgb(7, 144, 170);
+    background: rgba(7, 144, 170, .95);
   }
 } 
 
 html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+  --line-color: rgba(255, 255, 255, .2);
 
   &::-webkit-scrollbar-track {
-    background: rgb(0 0 0 / 0.1);
+    background: rgb(0 0 0 / .1);
   }
 
   &::-webkit-scrollbar-thumb {
     background: rgb(14, 41, 52);
-    border: 2px solid rgb(0 0 0 / 0.1);
+    border: 2px solid rgb(0 0 0 / .1);
   }
   &::-webkit-scrollbar-thumb:hover {
     background: rgb(24, 51, 62);
