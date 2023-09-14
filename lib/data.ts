@@ -2,7 +2,7 @@ import React from "react";
 
 import { LuBookMarked, LuGraduationCap } from "react-icons/lu";
 import { AiFillHome } from "react-icons/ai";
-import { BsFillInfoSquareFill, BsFillBriefcaseFill } from "react-icons/bs";
+import { BsFillInfoCircleFill, BsFillBriefcaseFill } from "react-icons/bs";
 import { FaFolderOpen, FaPencilRuler, FaEnvelope } from "react-icons/fa";
 
 import pfpImg from "@/public/img/pfp.png";
@@ -22,7 +22,7 @@ export const links = [
   {
     name: "About",
     hash: "#about",
-    icon: React.createElement(BsFillInfoSquareFill, {size: 22})
+    icon: React.createElement(BsFillInfoCircleFill, {size: 20})
   },
   {
     name: "Projects",
@@ -32,7 +32,7 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-    icon: React.createElement(FaPencilRuler, {size: 22})
+    icon: React.createElement(FaPencilRuler, {size: 20})
   },
   {
     name: "Experience",
