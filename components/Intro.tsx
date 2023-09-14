@@ -49,7 +49,7 @@ export default function Intro() {
         initial = {{ y: 100, opacity: 0 }}
         animate = {{ y: 0, opacity: 1 }}
       >
-        <span className="font-bold">Hello, I'm Bruno.</span> I'm a<span className="font-bold"> Computer Science student</span> currently in the<span className="font-bold"> 2nd semester</span> of the college. At the moment, my focus is<span className="underline"> learning React (Next.js) and TypeScript</span>.
+        <span className="font-bold">Hello, I'm Bruno.</span> I'm a<span className="font-bold"> Computer Science student</span> currently in the<span className="font-bold"> 2nd semester</span> of the college. At the moment, my focus is <span className="underline">learning React (Next.js) and TypeScript</span>.
       </motion.h1>
 
       <motion.div className="flex flex-col items-center justify-center text-lg font-medium gap-3 px-4 sm:flex-row"
