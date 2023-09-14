@@ -11,7 +11,7 @@ html {
 
   &::-webkit-scrollbar-thumb {
     background: rgb(17, 154, 180);
-    border: 2px solid rgba(220, 220, 220, 1);
+    border: 2px solid rgba(220, 220, 220, 0.2);
   }
   &::-webkit-scrollbar-thumb:hover {
     background: rgb(7, 144, 170);
