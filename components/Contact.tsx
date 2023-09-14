@@ -19,7 +19,7 @@ const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
 
     return (
-        <motion.section id="contact" className="text-center w-[min(100%,38rem)] mb-20 sm:mb-28" ref={ref}
+        <motion.section id="contact" className="text-center w-[min(100%,38rem)] mb-20 scroll-mt-28 sm:mb-28" ref={ref}
           initial     = {{ opacity: 0 }}
           whileInView = {{ opacity: 1 }}
           transition  = {{ duration: 1 }}
