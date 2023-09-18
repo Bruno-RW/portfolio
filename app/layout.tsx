@@ -8,7 +8,6 @@ import ActiveSectionContextProvider from '@/context/ActiveSectionContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ThemeSwitch from '@/components/ThemeSwitch';
-import { duration } from 'moment';
 
 const font = Inter({ subsets: ['latin'] });
 
