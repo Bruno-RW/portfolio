@@ -5,9 +5,9 @@ import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill, BsFillBriefcaseFill } from "react-icons/bs";
 import { FaFolderOpen, FaPencilRuler, FaEnvelope } from "react-icons/fa";
 
-import pfpImg from "@/public/img/pfp.png";
+import pfpImg from "@/public/img/pfp.webp";
 
-import cantinhomodaImg from "@/public/img/cantinho-moda.png";
+import cantinhomodaImg from "@/public/img/cantinho-moda.webp";
 import rmtdevImg from "@/public/img/rmtdev.png";
 import wordanalyticsImg from "@/public/img/wordanalytics.png";
 
