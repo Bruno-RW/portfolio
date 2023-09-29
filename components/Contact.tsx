@@ -46,7 +46,7 @@ const Contact = () => {
 
                 toast.success("E-mail sent successfully", toastStyle);
               }}>
-                <input className="borderBlack h-14 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                <input className="borderBlack h-14 px-4 rounded-lg outline-none focus:border-black/60 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-95 transition-all"
                   type="email"
                   name="email"
                   autoComplete="email"
@@ -55,7 +55,7 @@ const Contact = () => {
                   required
                 />
 
-                <textarea className="borderBlack h-52 my-3 p-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                <textarea className="borderBlack h-52 my-3 p-4 rounded-lg outline-none focus:border-black/60 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-95 transition-all"
                   name="text"
                   placeholder="Your message"
                   maxLength={2000}
