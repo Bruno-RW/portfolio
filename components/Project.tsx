@@ -21,12 +21,12 @@ const Project = ({title, description, tags, imageUrl, url} : ProjectProps) => {
     return (
         <Link className="block group mb-3 sm:mb-8 last:mb-0" href={url} target="_blank">
             <motion.div ref={ref} style={{scale: scaleProgress, opacity: opacityProgress}}>
-                <section className="relative max-w-[42rem] overflow-hidden border rounded-lg border-black/5 bg-gray-100 transition sm:h-[20rem] sm:pr-8 hover:bg-gray-200 sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <section className="relative min-h-full max-w-[42rem] overflow-hidden border rounded-lg border-black/5 bg-gray-100 transition sm:h-[20rem] sm:pr-8 hover:bg-gray-200 sm:group-even:pl-8 sm:group-even:pr-0 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
 
-                    <div className="flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] sm:group-even:ml-[18rem]">
-                        <h3 className="text-2xl font-semibold">{title}</h3>
+                    <div className="flex flex-col h-full pt-4 pb-7 px-2 sm:pl-10 sm:pr-0 sm:pt-10 sm:max-w-[50%] sm:group-even:ml-[18rem]">
+                        <h3 className="text-2xl w-full font-semibold">{title}</h3>
 
-                        <p className="text-gray-700 leading-relaxed mt-2 dark:text-white/70">
+                        <p className="text-sm text-gray-700 leading-relaxed mt-2 dark:text-white/70">
                             {description}
                         </p>
 

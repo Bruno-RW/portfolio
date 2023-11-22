@@ -8,8 +8,9 @@ import { FaFolderOpen, FaPencilRuler, FaEnvelope } from "react-icons/fa";
 import pfpImg from "@/public/img/pfp.webp";
 
 import cantinhomodaImg from "@/public/img/cantinho-moda.webp";
-import rmtdevImg from "@/public/img/rmtdev.png";
-import wordanalyticsImg from "@/public/img/wordanalytics.png";
+import ecommerceAdminImg from "@/public/img/ecommerce-admin.png";
+import ecommerceStoreImg from "@/public/img/ecommerce-store.png";
+import noImg from "@/public/img/noImg.jpg";
 
 export const profilePicture = pfpImg;
 
@@ -72,18 +73,32 @@ export const projectsData = [
     url: "https://github.com/Bruno-RW/cantinho_moda",
   },
   {
-    title: "Spotify Clone",
-    description: 'Spotify clone project following the instructions of "Code With Antonio" on Youtube.',
-    tags: ["React", "Next.js", "TypeScript", "Supabase", "Stripe", "Zustand", "PostgreSQL", "Tailwind", "Radix"],
-    imageUrl: rmtdevImg,
-    url: "https://github.com/Bruno-RW/spotify-clone",
+    title: "E-commerce admin",
+    description: 'E-commerce admin following the instructions of "Code With Antonio" on Youtube.',
+    tags: ["React", "Next.js", "TypeScript", "Clrek", "Stripe", "Cloudinary", "Zod", "Zustand", "MySQL", "Tailwind", "ShadcnUI", ],
+    imageUrl: ecommerceAdminImg,
+    url: "https://github.com/Bruno-RW/ecommerce-admin",
   },
   {
-    title: "TypeScript Video Game",
-    description: "A RPG clicker game made in cooperation with my college colleague, Pedro Henrique Kalschne.",
-    tags: ["TypeScript", "Python", "HTML", "CSS", "MySQL", "Tailwind"],
-    imageUrl: wordanalyticsImg,
-    url: "https://github.com/Bruno-RW/jogo-ts",
+    title: "E-commerce store",
+    description: 'E-commerce store following the instructions of "Code With Antonio" on Youtube.',
+    tags: ["React", "Next.js", "TypeScript", "Clerk", "Stripe", "Cloudinary", "Zod", "Zustand", "MySQL", "Tailwind", "ShadcnUI"],
+    imageUrl: ecommerceStoreImg,
+    url: "https://github.com/Bruno-RW/ecommerce-store",
+  },
+  {
+    title: "Cantinho Moda Admin",
+    description: "Improved admin version of my IT Associate Final Paper (unfinished).",
+    tags: ["React", "Next.js", "TypeScript", "NextAuth", "Cloudinary", "Stripe", "Axios", "Zustand", "Prisma","Zod", "PostgreSQL", "Tailwind", "ShadcnUI", "NextUI"],
+    imageUrl: noImg,
+    url: "https://github.com/Bruno-RW/cantinho-moda-back",
+  },
+  {
+    title: "Cantinho Moda Store",
+    description: "Improved store version of my IT Associate Final Paper (unfinished).",
+    tags: ["React", "Next.js", "TypeScript", "NextAuth", "Cloudinary", "Stripe", "Axios", "Zustand", "Prisma", "Zod", "PostgreSQL", "Tailwind", "ShadcnUI", "NextUI"],
+    imageUrl: noImg,
+    url: "https://github.com/Bruno-RW/cantinho-moda-front",
   },
 ] as const;
 
